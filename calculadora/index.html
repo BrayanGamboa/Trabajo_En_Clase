@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculadora</title>
+  </head>
+  <body onload="init()">
+    <div class="titulo">
+      <h1>Calculadora</h1>
+      <p>
+        En esta calculadora podrás realizar tus operaciones de manera online.
+    </p>
+    </div>
+    <center>
+    <div class="calculadora">
+        <div class="resultado">
+            <center><span id= "resultado"></span></center>
+        </div>
+        <h2>EsBraMa ®</h2>
+        <div class="botones">
+            <table>
+                <tr>
+                    <td><input type="reset" value="C" class="boton" id="borrar" onclick="location.reload()"/></td>
+                    <td><input type="button" value="/" class="boton" id="division"/></td>
+                    <td><input type="button" value="*" class="boton" id="multiplicacion"/></td> 
+                    <td><input type="button" value="-" class="boton" id="resta"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" class="boton" id="siete"/></td>
+                    <td><input type="button" value="8" class="boton" id="ocho"/></td>
+                    <td><input type="button" value="9" class="boton" id="nueve"/></td>
+                    <td><input type="button" value="+" class="boton" id="suma"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" class="boton" id="cuatro"/></td>
+                    <td><input type="button" value="5" class="boton" id="cinco"/></td>
+                    <td><input type="button" value="6" class="boton" id="seis"/></td>
+                    <td><input type="button" value="√" class="boton" id="raiz"/> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" class="boton" id="uno"/></td>
+                    <td><input type="button" value="2" class="boton" id="dos"/></td>
+                    <td><input type="button" value="3" class="boton" id="tres"/></td>
+                    <td><input type="button" value="=" class="boton" id="igual"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" class="boton" id="cero"/></td>
+                </tr>
+                
+            </table>
+        </div>
+    </center>
+        <script src="javascript.js"></script>
+  </body>
+</html>
